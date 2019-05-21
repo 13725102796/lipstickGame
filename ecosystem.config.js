@@ -7,7 +7,7 @@ module.exports = {
 
     // First application
     {
-      name: 'API',
+      name: 'lipstickGame', // 这个是pm2启动的应用名称
       script: 'app.js',
       env: {
         COMMON_VARIABLE: 'true'
