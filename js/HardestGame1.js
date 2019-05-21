@@ -11,12 +11,12 @@
     var RADIUS_BIG = 204*ratio;
     //分裂大圆
     var CircleCenterSplit = [
-        {"left":{"url":"../img/CircleCenter_1_split_left.png","w":"238","h":"407","rs":Math.PI*2},
-         "right":{"url":"../img/CircleCenter_1_split_right.png","w":"230","h":"407","cutx":"26","rs":Math.PI*2}},
-        {"left":{"url":"../img/CircleCenter_2_split_left.png","w":"238","h":"407","rs":Math.PI*2},
-         "right":{"url":"../img/CircleCenter_2_split_right.png","w":"230","h":"407","cutx":"26","rs":Math.PI*2}},
-        {"left":{"url":"../img/CircleCenter_3_split_left.png","w":"238","h":"407","rs":Math.PI*2},
-         "right":{"url":"../img/CircleCenter_3_split_right.png","w":"230","h":"407","cutx":"26","rs":Math.PI*2}},
+        {"left":{"url":"https://lipstick-1258676507.cos.ap-guangzhou.myqcloud.com/img/CircleCenter_1_split_left.png","w":"238","h":"407","rs":Math.PI*2},
+         "right":{"url":"https://lipstick-1258676507.cos.ap-guangzhou.myqcloud.com/img/CircleCenter_1_split_right.png","w":"230","h":"407","cutx":"26","rs":Math.PI*2}},
+        {"left":{"url":"https://lipstick-1258676507.cos.ap-guangzhou.myqcloud.com/img/CircleCenter_2_split_left.png","w":"238","h":"407","rs":Math.PI*2},
+         "right":{"url":"https://lipstick-1258676507.cos.ap-guangzhou.myqcloud.com/img/CircleCenter_2_split_right.png","w":"230","h":"407","cutx":"26","rs":Math.PI*2}},
+        {"left":{"url":"https://lipstick-1258676507.cos.ap-guangzhou.myqcloud.com/img/CircleCenter_3_split_left.png","w":"238","h":"407","rs":Math.PI*2},
+         "right":{"url":"https://lipstick-1258676507.cos.ap-guangzhou.myqcloud.com/img/CircleCenter_3_split_right.png","w":"230","h":"407","cutx":"26","rs":Math.PI*2}},
     ]
     //弹夹剩余子弹数
     var BulletCirclesIndex = 0;
@@ -49,14 +49,14 @@
     // //中心圆资源数组
     // var arrayCenterCircle = ["img/CircleCenter_1.png","img/CircleCenter_2.png"];
     //口红资源数组
-    var arrayLipstick = ["../img/Lipstick_1.png","../img/Lipstick_2.png","../img/Lipstick_3.png"];
+    var arrayLipstick = ["https://lipstick-1258676507.cos.ap-guangzhou.myqcloud.com/img/Lipstick_1.png","https://lipstick-1258676507.cos.ap-guangzhou.myqcloud.com/img/Lipstick_2.png","https://lipstick-1258676507.cos.ap-guangzhou.myqcloud.com/img/Lipstick_3.png"];
     //中心圆资源数组
-    var arrayCenterCircle = ["../img/CircleCenter_1.png","../img/CircleCenter_2.png","../img/CircleCenter_3.png"];
+    var arrayCenterCircle = ["https://lipstick-1258676507.cos.ap-guangzhou.myqcloud.com/img/CircleCenter_1.png","https://lipstick-1258676507.cos.ap-guangzhou.myqcloud.com/img/CircleCenter_2.png","https://lipstick-1258676507.cos.ap-guangzhou.myqcloud.com/img/CircleCenter_3.png"];
     //关卡资源
     var levelUrl = [
-        {"normal":"../img/level_icon_1_active.png","active":"../img/level_icon_1_active.png"},
-        {"normal":"../img/level_icon_2.png","active":"../img/level_icon_2_active.png"},
-        {"normal":"../img/level_icon_3.png","active":"../img/level_icon_3_active.png"}
+        {"normal":"https://lipstick-1258676507.cos.ap-guangzhou.myqcloud.com/img/level_icon_1_active.png","active":"https://lipstick-1258676507.cos.ap-guangzhou.myqcloud.com/img/level_icon_1_active.png"},
+        {"normal":"https://lipstick-1258676507.cos.ap-guangzhou.myqcloud.com/img/level_icon_2.png","active":"https://lipstick-1258676507.cos.ap-guangzhou.myqcloud.com/img/level_icon_2_active.png"},
+        {"normal":"https://lipstick-1258676507.cos.ap-guangzhou.myqcloud.com/img/level_icon_3.png","active":"https://lipstick-1258676507.cos.ap-guangzhou.myqcloud.com/img/level_icon_3_active.png"}
     ]
     //旋转半径 = canvas高度*0.25,canvas宽度*0.5-40中大者
     var ROTATION_RADIUS = Math.max(CANVAS_HEIGHT * 0.25, CANVAS_WIDTH * 0.5 - 40);
@@ -283,13 +283,13 @@
         // console.log(3633,this.restNum)
         if(this.restNum>=10){
             $("#bulletsNum2").css("display","block")
-            $("#bulletsNum1").attr("src","../img/"+Math.floor(this.restNum/10)+".png")
-            $("#bulletsNum2").attr("src","../img/"+this.restNum%10+".png")
+            $("#bulletsNum1").attr("src","https://lipstick-1258676507.cos.ap-guangzhou.myqcloud.com/img/"+Math.floor(this.restNum/10)+".png")
+            $("#bulletsNum2").attr("src","https://lipstick-1258676507.cos.ap-guangzhou.myqcloud.com/img/"+this.restNum%10+".png")
 
         }else{
             $("#bulletsNum2").attr("src","")
             $("#bulletsNum2").css("display","none")
-            $("#bulletsNum1").attr("src","../img/"+this.restNum+".png")
+            $("#bulletsNum1").attr("src","https://lipstick-1258676507.cos.ap-guangzhou.myqcloud.com/img/"+this.restNum+".png")
         }
     };
     CircleCenter.prototype.resetCircleCenterSplit=function (context,that,centerCircleSplitReposition,rs){
@@ -659,7 +659,7 @@
         },
         normalResults:function(){
             if(this.bulletCircles[BulletCirclesIndex]){
-                this.bulletCircles[BulletCirclesIndex].imgObj.src = "../img/Sword_small_"+this.level+"_gray.png";
+                this.bulletCircles[BulletCirclesIndex].imgObj.src = "https://lipstick-1258676507.cos.ap-guangzhou.myqcloud.com/img/Sword_small_"+this.level+"_gray.png";
                 BulletCirclesIndex++;
                 //this.centerCircle.restNum =this.levelArray[this.levelA][1] - BulletCirclesIndex
                 this.centerCircle.restNum =parseInt(this.getParams(this.levelA).levelArray[1] - BulletCirclesIndex)
@@ -731,7 +731,7 @@
             console.log(22,self.level,self.levelLength);
             if (self.level <= self.levelLength) {
                 console.log(11,self.level,self.levelLength);
-               $("#levelSwitchBoxMain").attr("src", "../img/level_"+self.level+"_mains.jpg");
+               $("#levelSwitchBoxMain").attr("src", "https://lipstick-1258676507.cos.ap-guangzhou.myqcloud.com/img/level_"+self.level+"_mains.jpg");
                 $("#levelSwitchBox").css("display","block");
                 $("#levelSwitchBox").addClass("hidden")
             }
@@ -798,7 +798,7 @@
             for(i = 0; i < lens; i++){
                 /*弹夹绘制调用*/
                 var tempClipImg = new Image();
-                tempClipImg.src = "../img/Sword_small_"+this.level+".png";
+                tempClipImg.src = "https://lipstick-1258676507.cos.ap-guangzhou.myqcloud.com/img/Sword_small_"+this.level+".png";
                 var ClipTop = CANVAS_HEIGHT-CLIPSIZE.bottom/*-CLIPSIZE.h*lens*/-CLIPSIZE.space*lens;
                 tempClip = new Clip(15, ClipTop+i*CLIPSIZE.space, CLIPSIZE.w, CLIPSIZE.h, tempClipImg)
                 this.bulletCircles.push(tempClip);
