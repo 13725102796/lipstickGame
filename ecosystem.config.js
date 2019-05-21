@@ -18,10 +18,10 @@ module.exports = {
     },
 
     // Second application
-    {
-      name: 'WEB',
-      script: 'web.js'
-    }
+    // {
+    //   name: 'WEB',
+    //   script: 'web.js'
+    // }
   ],
 
   /**
