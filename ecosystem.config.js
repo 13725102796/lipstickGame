@@ -35,7 +35,7 @@ module.exports = {
       ref: 'origin/cdn',
       repo: 'git@github.com:13725102796/lipstickGame.git',
       path: '/zyc/lipstickGame',
-      'post-deploy': 'npm install && pm2 reload ecosystem.config.js --env production'
+      'post-deploy': 'git pull && pm2 reload ecosystem.config.js --env production'
     },
     dev: {
       user: 'node',
