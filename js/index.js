@@ -41,7 +41,11 @@ $(function() {
     })
     $("#levelSwitchBox").addClass("hidden")
     if(!hg){
-        createHg(false)
+        // 这里可以注入游戏初始化配置
+        createHg({
+            difficulty: 'difficult',  // easy  medium difficult
+
+        })
     }
 });
 function playAudioInWechat(obj){

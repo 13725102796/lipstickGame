@@ -81,7 +81,131 @@
             "startJudgeCheatDistanceNum":6
         }
     }*/
-    var D_Json = {
+    // var D_Json = {
+    //     "Level1_PARAMETERS":{
+    //         "ROTAION_SPEED_ARRAY" : [-0.05,-0.04,-0.02,0.02,0.04,0.05],
+    //         "rotationAccelerationSpeed" : 0.001,
+    //         "levelArray":[0,6,-0.02,30]
+      
+    //     },
+    //     "Level2_PARAMETERS":{
+    //         "ROTAION_SPEED_ARRAY" : [-0.06,-0.03,-0.02,0.02,0.04,0.06],
+    //         "rotationAccelerationSpeed" : 0.002,
+    //         "levelArray":[0,8,0.04,40] 
+
+    //     },
+    //     "Level3_PARAMETERS":{
+    //         "ROTAION_SPEED_ARRAY" : [-0.09,-0.07,-0.05,0.06,0.08,0.09],
+    //         "rotationAccelerationSpeed" : 0.007,
+    //         "levelArray":[0,12,0.09,60]
+
+    //     //    [0,口红数，速度，时间]
+    //     },
+    //     "LAST_3_PARAMETERS":{
+    //         "ROTAION_SPEED_ARRAY" : [-0.09,-0.07,-0.05,0.06,0.08,0.09],
+    //         "rotationAccelerationSpeed" : 0.009,
+    //         "levelArray":[0,6,0.07,60]
+    //     },
+    //     "LAST_2_PARAMETERS":{
+    //         "ROTAION_SPEED_ARRAY" : [-0.1,-0.08,-0.03,0.04,0.07,0.1],
+    //         "rotationAccelerationSpeed" : 0.009,
+    //         "levelArray":[0,8,0.08,60]
+    //     },
+    //     "LAST_1_PARAMETERS":{
+    //         "ROTAION_SPEED_ARRAY" : [-0.1,-0.07,-0.03,0.03,0.07,0.1],
+    //         "rotationAccelerationSpeed" : 0.009,
+    //         "levelArray":[0,12,0.09,60]
+    //     },
+    //     "fail_PARAMETERS":{
+    //         "cheatDistance":AimBullet.w*5,
+    //         "startJudgeCheatDistanceNum":3 
+    //     }
+    // }
+
+    var easy_Json = {
+        "Level1_PARAMETERS":{
+            "ROTAION_SPEED_ARRAY" : [-0.05,-0.04,-0.02,0.02,0.04,0.05],
+            "rotationAccelerationSpeed" : 0.001,  
+            "levelArray":[0,6,-0.02,30]
+      
+        },
+        "Level2_PARAMETERS":{
+            "ROTAION_SPEED_ARRAY" : [-0.06,-0.03,-0.02,0.02,0.04,0.06],
+            "rotationAccelerationSpeed" : 0.002,
+            "levelArray":[0,8,0.04,40] 
+
+        },
+        "Level3_PARAMETERS":{
+            "ROTAION_SPEED_ARRAY" : [-0.06,-0.03,-0.02,0.02,0.04,0.06],
+            "rotationAccelerationSpeed" : 0.005, 
+            "levelArray":[0,12,0.09,60]
+
+        //    [0,口红数，速度，时间]
+        },
+        "LAST_3_PARAMETERS":{
+            // "ROTAION_SPEED_ARRAY" : [-0.09,-0.07,-0.05,0.06,0.08,0.09],
+            "ROTAION_SPEED_ARRAY" : [-0.06,-0.03,-0.02,0.02,0.04,0.06],
+            "rotationAccelerationSpeed" : 0.003,
+            "levelArray":[0,6,0.07,60]
+        },
+        "LAST_2_PARAMETERS":{
+            "ROTAION_SPEED_ARRAY" : [-0.1,-0.08,-0.03,0.04,0.07,0.1],
+            "rotationAccelerationSpeed" : 0.009,
+            "levelArray":[0,8,0.08,60]
+        },
+        "LAST_1_PARAMETERS":{
+            "ROTAION_SPEED_ARRAY" : [-0.1,-0.07,-0.03,0.03,0.07,0.1],
+            "rotationAccelerationSpeed" : 0.009,
+            "levelArray":[0,12,0.09,60]
+        },
+        "fail_PARAMETERS":{
+            "cheatDistance":AimBullet.w*2,
+            "startJudgeCheatDistanceNum":3 
+        }
+    }
+    var medium_Json = {
+        "Level1_PARAMETERS":{
+            "ROTAION_SPEED_ARRAY" : [-0.05,-0.04,-0.02,0.02,0.04,0.05],
+            "rotationAccelerationSpeed" : 0.001,
+            "levelArray":[0,6,-0.02,30]
+      
+        },
+        "Level2_PARAMETERS":{
+            "ROTAION_SPEED_ARRAY" : [-0.06,-0.03,-0.02,0.02,0.04,0.06],
+            "rotationAccelerationSpeed" : 0.002,
+            "levelArray":[0,8,0.04,40] 
+
+        },
+        "Level3_PARAMETERS":{
+            "ROTAION_SPEED_ARRAY" : [-0.08,-0.06,-0.04,0.04,0.06,0.08],
+            "rotationAccelerationSpeed" : 0.005,
+            "levelArray":[0,12,0.09,60]
+
+        //    [0,口红数，速度，时间]
+        },
+        "LAST_3_PARAMETERS":{
+            // "ROTAION_SPEED_ARRAY" : [-0.09,-0.07,-0.05,0.06,0.08,0.09],
+            "ROTAION_SPEED_ARRAY" : [-0.08,-0.06,-0.04,0.04,0.06,0.08],
+            "rotationAccelerationSpeed" : 0.005,
+            "levelArray":[0,6,0.07,60]
+        },
+        "LAST_2_PARAMETERS":{
+            "ROTAION_SPEED_ARRAY" : [-0.1,-0.08,-0.03,0.04,0.07,0.1],
+            "rotationAccelerationSpeed" : 0.009,
+            "levelArray":[0,8,0.08,60]
+        },
+        "LAST_1_PARAMETERS":{
+            "ROTAION_SPEED_ARRAY" : [-0.1,-0.07,-0.03,0.03,0.07,0.1],
+            "rotationAccelerationSpeed" : 0.009,
+            "levelArray":[0,12,0.09,60]
+        },
+        "fail_PARAMETERS":{
+            "cheatDistance":AimBullet.w*5,
+            "startJudgeCheatDistanceNum":4 
+        }
+    }
+
+    var difficult_Json = {
         "Level1_PARAMETERS":{
             "ROTAION_SPEED_ARRAY" : [-0.05,-0.04,-0.02,0.02,0.04,0.05],
             "rotationAccelerationSpeed" : 0.001,
@@ -117,8 +241,8 @@
             "levelArray":[0,12,0.09,60]
         },
         "fail_PARAMETERS":{
-            "cheatDistance":AimBullet.w*5,
-            "startJudgeCheatDistanceNum":3 
+            "cheatDistance":AimBullet.w*6,
+            "startJudgeCheatDistanceNum": 6 
         }
     }
     //子弹发射速度
@@ -415,7 +539,7 @@
      * 默认旋转轴上的圆形个数/子弹个数/旋转速度(弧度),
      * 其中前两个是必须的, 最后一个, 如果省略, 将用默认值0.03;
      * **/
-    function Game(canvas,GAMEMODE){
+    function Game(canvas,config){
         Game.prototype.levelLength = 3;
         if(!canvas || !canvas.getContext){
             throw new Error("参数canvas不能为空, 且必须为canvas元素");
@@ -424,6 +548,14 @@
         var data = JSON.parse($.cookie('game_cookie'))
         if (!data.game_result) {
             data = {game_result:0}
+        }
+        var diff = config.difficulty || 'easy'
+        if(diff === 'easy') {
+            Game.prototype.D_Json = easy_Json
+        } else if(diff === 'medium') {
+            Game.prototype.D_Json = medium_Json
+        } else {
+            Game.prototype.D_Json = difficult_Json
         }
         /*if(data.game_result==1){
             this.levelArray = Difficulty_Json.SUCCESS_PARAMETERS.levelArray
@@ -436,6 +568,7 @@
         }*/
     }
     Game.prototype = {
+        // D_Json: {},
         level:1, /*游戏当前关卡*/
         isPause:false, /*游戏当前是否处于暂停状态, 可通过gamePause方法暂停, 只读*/
         isOver:true,/*当前游戏是否已经结束,只读*/
@@ -456,19 +589,21 @@
         saveCenterCircleSplitReposition:{left:{x:0,y:0},right:{x:0,y:0}},
         levelA:0,
         getParams:function(nowLevel){
+            // console.log(this.D_Json)
             if(nowLevel == 0){
-                return D_Json.Level1_PARAMETERS
+                return this.D_Json.Level1_PARAMETERS
             }else if(nowLevel == 1){
-                return D_Json.Level2_PARAMETERS
+                return this.D_Json.Level2_PARAMETERS
             }else if(nowLevel == 2){
-                return D_Json.Level3_PARAMETERS
+                return this.D_Json.Level3_PARAMETERS
             }else if(nowLevel == 3){
-                return D_Json.LAST_3_PARAMETERS
+                return this.D_Json.LAST_3_PARAMETERS
             }else if(nowLevel == 4){
-                return D_Json.LAST_2_PARAMETERS
+                return this.D_Json.LAST_2_PARAMETERS
             }else if(nowLevel == 5){
-                return D_Json.LAST_1_PARAMETERS
+                return this.D_Json.LAST_1_PARAMETERS
             }
+            
         },
         init:function (){
             var initParams = this.getParams(this.levelA);
@@ -497,7 +632,7 @@
             })
         },
         gameStart:function (){
-            this.level = 1;
+            this.level = 3;
             this.isPause = false;
             this.isOver = false;
             this.isCanTap = true;
@@ -905,7 +1040,7 @@
                 var params_json = this.getParams(this.levelA);
                 // console.log(88,params_json);
                 var num = parseInt(params_json.levelArray[1]-BulletCirclesIndex);
-                if(num<=D_Json.fail_PARAMETERS.startJudgeCheatDistanceNum){
+                if(num<=this.D_Json.fail_PARAMETERS.startJudgeCheatDistanceNum){
                     if(this.nowSpeed>0){
                         this.nowSpeed = 0.1
                     }else{
